@@ -28,6 +28,16 @@ class ViewController: UIViewController {
         view.addSubview(nameField)
         
     
+        nameField.trailingAnchor.constraintEqualToAnchor(view.layoutMarginsGuide.trailingAnchor).active = true
+        nameField.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor, constant: 20).active = true
+        
+        nameLabel.leadingAnchor.constraintEqualToAnchor(view.layoutMarginsGuide.leadingAnchor).active = true
+        
+        
+        nameField.leadingAnchor.constraintEqualToAnchor(nameLabel.trailingAnchor).active = true
+        nameLabel.firstBaselineAnchor.constraintEqualToAnchor(nameField.firstBaselineAnchor).active = true
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
