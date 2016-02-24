@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         nameLabel.setContentHuggingPriority(251, forAxis: UILayoutConstraintAxis.Horizontal)
        // print(nameField.contentHuggingPriorityForAxis(.Horizontal))
         
-        
+        nameField.setContentHuggingPriority(251, forAxis: .Horizontal)
     
     }
 
