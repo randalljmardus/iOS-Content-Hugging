@@ -37,6 +37,10 @@ class ViewController: UIViewController {
         nameField.leadingAnchor.constraintEqualToAnchor(nameLabel.trailingAnchor).active = true
         nameLabel.firstBaselineAnchor.constraintEqualToAnchor(nameField.firstBaselineAnchor).active = true
         
+        nameLabel.setContentHuggingPriority(251, forAxis: UILayoutConstraintAxis.Horizontal)
+       // print(nameField.contentHuggingPriorityForAxis(.Horizontal))
+        
+        
     
     }
 
